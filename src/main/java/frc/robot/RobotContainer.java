@@ -4,9 +4,13 @@
 
 package frc.robot;
 
+import frc.robot.subsystems.Info;
 
 public class RobotContainer {
+  private Info infoSys;
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
-  public RobotContainer() {}
+  public RobotContainer() {
+    infoSys = new Info();
+  }
 }
